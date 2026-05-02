@@ -1,0 +1,14 @@
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\bin\Debug\net9.0-windows\Lab10.exe
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\bin\Debug\net9.0-windows\Lab10.deps.json
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\bin\Debug\net9.0-windows\Lab10.runtimeconfig.json
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\bin\Debug\net9.0-windows\Lab10.dll
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\bin\Debug\net9.0-windows\Lab10.pdb
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.AssemblyInfoInputs.cache
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.AssemblyInfo.cs
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.csproj.CoreCompileInputs.cache
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.dll
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\refint\Lab10.dll
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.pdb
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\Lab10.genruntimeconfig.cache
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab10\obj\Debug\net9.0-windows\ref\Lab10.dll
