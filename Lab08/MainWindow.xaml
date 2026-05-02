@@ -1,0 +1,119 @@
+<Window x:Class="Lab08.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lab08"
+        Height="720"
+        Width="1100"
+        MinHeight="560"
+        MinWidth="820"
+        Loaded="Window_Loaded"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Closing="Window_Closing">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" Executed="New_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Print" Executed="Print_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="Close_Executed"/>
+    </Window.CommandBindings>
+    <DockPanel Background="#EEF0F2">
+        <Menu DockPanel.Dock="Top" Background="White">
+            <MenuItem x:Name="FileMenu">
+                <MenuItem x:Name="NewMenuItem" Command="ApplicationCommands.New" InputGestureText="Ctrl+N"/>
+                <MenuItem x:Name="NewWindowMenuItem" Click="NewWindow_Click"/>
+                <MenuItem x:Name="OpenMenuItem" Command="ApplicationCommands.Open" InputGestureText="Ctrl+O"/>
+                <Separator/>
+                <MenuItem x:Name="SaveMenuItem" Command="ApplicationCommands.Save" InputGestureText="Ctrl+S"/>
+                <MenuItem x:Name="SaveAsMenuItem" Click="SaveAs_Click" InputGestureText="Ctrl+Shift+S"/>
+                <MenuItem x:Name="SaveAllMenuItem" Click="SaveAll_Click"/>
+                <Separator/>
+                <MenuItem x:Name="PrintMenuItem" Command="ApplicationCommands.Print" InputGestureText="Ctrl+P"/>
+                <Separator/>
+                <MenuItem x:Name="CloseDocumentMenuItem" Command="ApplicationCommands.Close" InputGestureText="Ctrl+W"/>
+                <MenuItem x:Name="ExitMenuItem" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="EditMenu">
+                <MenuItem x:Name="UndoMenuItem" Command="ApplicationCommands.Undo"/>
+                <MenuItem x:Name="RedoMenuItem" Command="ApplicationCommands.Redo"/>
+                <Separator/>
+                <MenuItem x:Name="CutMenuItem" Command="ApplicationCommands.Cut"/>
+                <MenuItem x:Name="CopyMenuItem" Command="ApplicationCommands.Copy"/>
+                <MenuItem x:Name="PasteMenuItem" Command="ApplicationCommands.Paste"/>
+                <MenuItem x:Name="SelectAllMenuItem" Command="ApplicationCommands.SelectAll"/>
+                <Separator/>
+                <MenuItem x:Name="FindMenuItem" Click="Find_Click" InputGestureText="Ctrl+F"/>
+                <MenuItem x:Name="ReplaceMenuItem" Click="Find_Click" InputGestureText="Ctrl+H"/>
+            </MenuItem>
+            <MenuItem x:Name="FormatMenu">
+                <MenuItem x:Name="BoldMenuItem" Command="EditingCommands.ToggleBold" InputGestureText="Ctrl+B"/>
+                <MenuItem x:Name="ItalicMenuItem" Command="EditingCommands.ToggleItalic" InputGestureText="Ctrl+I"/>
+                <MenuItem x:Name="UnderlineMenuItem" Command="EditingCommands.ToggleUnderline" InputGestureText="Ctrl+U"/>
+                <Separator/>
+                <MenuItem x:Name="ColorMenuItem" Click="Color_Click"/>
+                <MenuItem x:Name="AlignMenu">
+                    <MenuItem x:Name="LeftMenuItem" Click="Left_Click"/>
+                    <MenuItem x:Name="CenterMenuItem" Click="Center_Click"/>
+                    <MenuItem x:Name="RightMenuItem" Click="Right_Click"/>
+                    <MenuItem x:Name="JustifyMenuItem" Click="Justify_Click"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="InsertMenu">
+                <MenuItem x:Name="ImageMenuItem" Click="Image_Click" InputGestureText="Ctrl+Shift+I"/>
+                <MenuItem x:Name="DateMenuItem" Click="Date_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="LanguageMenu">
+                <MenuItem x:Name="UkrainianMenuItem" Click="Ukrainian_Click"/>
+                <MenuItem x:Name="EnglishMenuItem" Click="English_Click"/>
+                <MenuItem x:Name="PolishMenuItem" Click="Polish_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="WindowMenu">
+                <MenuItem x:Name="PreviousDocumentMenuItem" Click="PreviousDocument_Click"/>
+                <MenuItem x:Name="NextDocumentMenuItem" Click="NextDocument_Click"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray DockPanel.Dock="Top" Background="#F9FAFB">
+            <ToolBar>
+                <Button x:Name="NewButton" Command="ApplicationCommands.New"/>
+                <Button x:Name="OpenButton" Command="ApplicationCommands.Open"/>
+                <Button x:Name="SaveButton" Command="ApplicationCommands.Save"/>
+                <Button x:Name="SaveAsButton" Click="SaveAs_Click"/>
+                <Separator/>
+                <Button x:Name="UndoButton" Command="ApplicationCommands.Undo"/>
+                <Button x:Name="RedoButton" Command="ApplicationCommands.Redo"/>
+                <Separator/>
+                <ToggleButton x:Name="BoldButton" Command="EditingCommands.ToggleBold"/>
+                <ToggleButton x:Name="ItalicButton" Command="EditingCommands.ToggleItalic"/>
+                <ToggleButton x:Name="UnderlineButton" Command="EditingCommands.ToggleUnderline"/>
+                <Separator/>
+                <TextBlock x:Name="FontLabel" VerticalAlignment="Center" Margin="6,0,2,0"/>
+                <ComboBox x:Name="FontFamilyBox" Width="170" SelectionChanged="FontFamilyBox_SelectionChanged"/>
+                <TextBlock x:Name="SizeLabel" VerticalAlignment="Center" Margin="6,0,2,0"/>
+                <ComboBox x:Name="FontSizeBox" Width="72" IsEditable="True" SelectionChanged="FontSizeBox_SelectionChanged" LostKeyboardFocus="FontSizeBox_LostKeyboardFocus" PreviewKeyDown="FontSizeBox_PreviewKeyDown"/>
+                <Button x:Name="ColorButton" Click="Color_Click"/>
+                <Separator/>
+                <Button x:Name="LeftButton" Click="Left_Click"/>
+                <Button x:Name="CenterButton" Click="Center_Click"/>
+                <Button x:Name="RightButton" Click="Right_Click"/>
+                <Button x:Name="JustifyButton" Click="Justify_Click"/>
+                <Separator/>
+                <Button x:Name="ImageButton" Click="Image_Click"/>
+                <Button x:Name="FindButton" Click="Find_Click"/>
+                <ComboBox x:Name="LanguageBox" Width="135" SelectionChanged="LanguageBox_SelectionChanged"/>
+            </ToolBar>
+        </ToolBarTray>
+        <StatusBar DockPanel.Dock="Bottom" Background="White">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusText"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock x:Name="PositionText"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock x:Name="InfoText"/>
+            </StatusBarItem>
+        </StatusBar>
+        <TabControl x:Name="DocumentsTab" Margin="8" SelectionChanged="DocumentsTab_SelectionChanged"/>
+    </DockPanel>
+</Window>
