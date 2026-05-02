@@ -1,0 +1,14 @@
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.AssemblyInfoInputs.cache
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.AssemblyInfo.cs
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.csproj.CoreCompileInputs.cache
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\bin\Debug\net9.0-windows\Lab09.exe
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\bin\Debug\net9.0-windows\Lab09.deps.json
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\bin\Debug\net9.0-windows\Lab09.runtimeconfig.json
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\bin\Debug\net9.0-windows\Lab09.dll
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\bin\Debug\net9.0-windows\Lab09.pdb
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.dll
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\refint\Lab09.dll
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.pdb
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\Lab09.genruntimeconfig.cache
+C:\Users\ibg47\OneDrive\Desktop\OOPLabs\Lab09\obj\Debug\net9.0-windows\ref\Lab09.dll
